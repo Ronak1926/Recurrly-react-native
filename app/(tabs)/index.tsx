@@ -8,9 +8,7 @@ const SafeAreaView = styled(RNSafeAreaView);
 export default function App() {
   return (
     <SafeAreaView className="flex-1 p-5 bg-background">
-      <Text className="text-xl font-bold text-success">
-        Welcome to Nativewind!
-      </Text>
+      <Text className="text-5xl font-bold text-primary">Home</Text>
       <Link
         href="/onboarding"
         className="mt-4 rounded bg-primary text-white p-4"
@@ -28,21 +26,6 @@ export default function App() {
         className="mt-4 rounded bg-primary text-white p-4"
       >
         Go to Sign Up
-      </Link>
-      <Link
-        href="/subscriptions/spotify"
-        className="mt-4 rounded bg-primary text-white p-4"
-      >
-        Go to Spotify Subscription
-      </Link>
-      <Link
-        href={{
-          pathname: "/subscriptions/[id]",
-          params: { id: "claude" },
-        }}
-        className="mt-4 rounded bg-primary text-white p-4"
-      >
-        Go to Claude's Subscription
       </Link>
     </SafeAreaView>
   );
